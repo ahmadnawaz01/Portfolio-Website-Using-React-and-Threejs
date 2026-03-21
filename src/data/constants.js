@@ -6,6 +6,7 @@ export const Bio = {
     "UI/UX Designer",
     "Programmer",
   ],
+  skilldur:"Here are some of my skills on which I have been working on for the past 3 years",
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/ahmadnawaz01",
@@ -15,6 +16,8 @@ export const Bio = {
   twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/rishav_chanda/",
   facebook: "https://www.facebook.com/rishav.chanda.165/",
+  exp:"Currently i am student in 6th semester",
+  edjucation:"this is my ejucation"
 };
 
 export const skills = [

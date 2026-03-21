@@ -4,6 +4,15 @@ import styled from 'styled-components'
 import Typewriter from 'typewriter-effect';
 import proimage from '../../images/profileimg.jpg'
 import HeroBgAnimation from '../HeroBgAnimation'
+import Tilt from 'react-parallax-tilt';
+import { motion } from "framer-motion";
+import {
+  headContainerAnimation,
+  headContentAnimation,
+  headTextAnimation,
+} from "../../utils/motion";
+import StarCanvas from "../../canvas/Stars";
+
 
 const HeroContainer = styled.div`
 z-index: 1;
@@ -218,9 +227,14 @@ const Hero = () => {
         <HeroContainer className='flex justify-center relative  '>
           <HeroBg>
             <HeroBgAnimation/>
+            <StarCanvas/>
           </HeroBg>
+          <motion.div {...headContainerAnimation}>
+
           <HeroInnerContainer className='flex relative justify-between items-center w-full'>
             <HeroLeftContainer>
+              <motion.div {...headTextAnimation}>
+
               <Title>
                 Hi, I am <br /> {Bio.name}
               </Title>
@@ -236,18 +250,27 @@ const Hero = () => {
                   } />
                 </Span>
               </TextLoop>
+                  </motion.div>
+                  <motion.div {...headContentAnimation}>
 
               <TextDescription>
                 {Bio.description}
               </TextDescription>
-              <ResumeButton>
+                  </motion.div>
+              <ResumeButton href={Bio.resume} target='_blank'>
                 check Resume
               </ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
+              <motion.div {...headContentAnimation}>
+
+              <Tilt>
               <Img src={proimage} alt="Ahmad Nawaz"/>
+              </Tilt>
+              </motion.div>
             </HeroRightContainer>
           </HeroInnerContainer>
+                      </motion.div>
         </HeroContainer>
       </div>
     </>
