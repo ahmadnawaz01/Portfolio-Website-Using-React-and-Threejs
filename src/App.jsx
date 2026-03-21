@@ -1,6 +1,7 @@
 import styled, { ThemeProvider } from "styled-components"
 import {darkTheme} from "./utils/Themes"
 import Navbar from "./componenets/Navbar"
+import Footer from "./componenets/Footer"
 import { BrowserRouter } from "react-router-dom"
 import Hero from "./componenets/sections/Hero"
 import Skills from "./componenets/sections/Skills"
@@ -9,8 +10,6 @@ import Edjucation from "./componenets/sections/Edjucation"
 import StarCanvas from "../src/canvas/Stars";
 import Projects from "./componenets/sections/Projects"
 import Contact from "./componenets/sections/Contact"
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -52,10 +51,10 @@ function App() {
       <Projects/>
       <Wrapper>
       <Edjucation/>
-      <Contact/>
-      <ToastContainer position="bottom-right" theme="dark" />
       </Wrapper>
+      <Contact/>
       </div>
+      <Footer/>
     </Body>
 </BrowserRouter>
   </ThemeProvider>

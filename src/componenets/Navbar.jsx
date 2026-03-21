@@ -128,17 +128,17 @@ const Navbar = () => {
             <NavItems className='flex items-center list-none justify-center gap-8'>
                 <NavLink href="#About">About</NavLink>
                 <NavLink href="#Skills">Skills</NavLink>
-                <NavLink href="#Experience">Experience</NavLink>
                 <NavLink href="#Projects">Projects</NavLink>
                 <NavLink href="#Education">Education</NavLink>
+                <NavLink href="#Contact">Contact</NavLink>
             </NavItems>
             {
                 isOpen && <MobileMenu isOpen={isOpen}>
                     <NavLink onClick={()=>setisOpen(!isOpen)} href="#About">About</NavLink>
                     <NavLink onClick={()=>setisOpen(!isOpen)} href="#Skills">Skills</NavLink>
-                    <NavLink onClick={()=>setisOpen(!isOpen)} href="#Experience">Experience</NavLink>
                     <NavLink onClick={()=>setisOpen(!isOpen)} href="#Projects">Projects</NavLink>
                     <NavLink onClick={()=>setisOpen(!isOpen)} href="#Education">Education</NavLink>
+                    <NavLink onClick={()=>setisOpen(!isOpen)} href="#Contact">Contact</NavLink>
                     <GithubButton href={Bio.github} style={{
                         background: theme.primary,
                         color: theme.text_primary
