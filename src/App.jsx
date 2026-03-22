@@ -7,7 +7,6 @@ import Hero from "./componenets/sections/Hero"
 import Skills from "./componenets/sections/Skills"
 import Experience from "./componenets/sections/Experience"
 import Edjucation from "./componenets/sections/Edjucation"
-import StarCanvas from "../src/canvas/Stars";
 import Projects from "./componenets/sections/Projects"
 import Contact from "./componenets/sections/Contact"
 import { ToastContainer } from 'react-toastify';
@@ -43,7 +42,6 @@ function App() {
 <BrowserRouter>
     <Navbar/>
     <Body>
-      <StarCanvas/>
       <div>
       <Hero/>
       <Wrapper>

@@ -32,8 +32,8 @@ font-size: 1rem;
 const Navlogo = styled(Link)`
 padding: 0 6px;
 text-decoration:none;
-font-weight: 500;
-font-size: 18px;
+font-weight: 600;
+font-size: 22px;
 color: inherit;
 `;
 const NavItems = styled.ul`
@@ -118,7 +118,7 @@ const Navbar = () => {
 
     return <Nav>
         <NavbarContainer>
-            <Navlogo className='w-[80%]' to="/">AN</Navlogo>
+            <Navlogo className='w-[80%]' to="/">@Ahmad</Navlogo>
 
             <MobileIcon className='cursor-pointer' onClick={() => setisOpen(!isOpen)}>
                 <MenuRounded style={{ color: "inherit" }} />
